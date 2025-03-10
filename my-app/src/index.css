@@ -16,7 +16,7 @@
     max-width: 1170px;
     margin: 5rem auto;
     display: grid;
-    gap: 2rem;
+    gap: 1rem;
   }
   
   @media screen and (min-width: 768px) {
@@ -30,6 +30,7 @@
     border-radius: 1rem;
     padding: 2rem;
     text-align: center;
+    position: relative;
   }
   .book img {
     width: 300px;
@@ -49,9 +50,25 @@
   .book p {
     margin: 1rem 0 0.5rem;
   }
-  h1 {
-    text-align: center;
-    margin-top: 4rem;
-    text-transform: capitalize;
+
+  .number {
+    position: absolute;
+    top: 0;
+    left: 0;
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #ffffff;
+    padding: 0.75rem;
+    border-top-left-radius: 1rem;
+    border-bottom-right-radius: 1rem;
+    background: #f4ce26;
   }
   
+  h1 {
+    text-align: center;
+    margin: 2rem 0 0 0;
+    text-transform: capitalize;
+    color: #464b79;
+    letter-spacing: 0.2rem;
+    font-weight: 700;
+  }
