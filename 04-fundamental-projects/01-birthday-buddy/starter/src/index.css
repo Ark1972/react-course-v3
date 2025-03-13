@@ -294,6 +294,7 @@ main {
 .person img {
   width: 75px;
   height: 75px;
+  object-fit: cover;
   border-radius: 50%;
   box-shadow: var(--shadow-3);
 }
