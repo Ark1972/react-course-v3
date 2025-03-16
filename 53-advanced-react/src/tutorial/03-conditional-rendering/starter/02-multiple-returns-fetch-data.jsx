@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react';
-const url = 'https://api.github.com/users/QuincyLarsonXX';
+const url = 'https://api.github.com/users/QuincyLarson';
 
 const MultipleReturnsBasics = () => {
   const [isLoading, setIsLoading] = useState(true)
@@ -7,6 +7,10 @@ const MultipleReturnsBasics = () => {
   const [data, setData] = useState({})
 
   useEffect(()=>{
+
+    setIsError(false)
+    setIsLoading(true)
+
     const fetchData = async () => {
       try {
         const response = await fetch(url)
@@ -38,7 +42,7 @@ const MultipleReturnsBasics = () => {
   return (
     <>
       <h1>{data.login}</h1>
-      <img src={data.avatar_url} style={{width: "200px"}} />
+      <img src={data.avatar_url} style={{width: "200px", borderRadius: "50%"}} />
       <article>
         {data.bio}
       </article>
