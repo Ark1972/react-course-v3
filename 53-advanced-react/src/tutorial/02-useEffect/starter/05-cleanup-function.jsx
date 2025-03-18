@@ -18,12 +18,19 @@ const CleanupFunction = () => {
 
 const ToggleElement = () => {
 
-  useEffect(() => {
-    console.log('hello world');
-    return () => console.log('cleanup');
-  }, []);
+  const [counter, setCounter] = useState(0)
 
-  return <h2>Toggled Element</h2>;
+  useEffect(() => {
+    const someFunc = () => {
+      console.log('resize..')
+    };
+    window.addEventListener('resize', someFunc)
+    return () => {
+      window.removeEventListener('resize', someFunc)
+    }
+  }, [counter]);
+
+  return <h2>Toggled Element {counter}</h2>;
 }
 
 export default CleanupFunction;
