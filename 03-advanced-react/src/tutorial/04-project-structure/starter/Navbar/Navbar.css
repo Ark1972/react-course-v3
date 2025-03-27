@@ -1,0 +1,8 @@
+.navbar {
+    display: block;
+}
+
+.navbar h2 {
+    color: blue;
+    font-size: 2rem;
+}
