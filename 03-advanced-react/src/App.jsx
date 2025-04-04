@@ -1,10 +1,10 @@
-import UseRefBasics from './tutorial/07-useRef/starter/01-useRef-basics';
+import Navbar from './tutorial/09-context-api/starter/Navbar';
 
 function App() {
     return (
         <div className='container'>
             <h2>Advanced React</h2>
-            <UseRefBasics />
+            <Navbar />
         </div>
     );
 }
