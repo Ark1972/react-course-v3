@@ -1,10 +1,10 @@
-import Navbar from './tutorial/09-context-api/starter/Navbar';
+import ReducerBasics from "./tutorial/10-useReducer/starter/01-useReducer.jsx";
 
 function App() {
     return (
         <div className='container'>
             <h2>Advanced React</h2>
-            <Navbar />
+            <ReducerBasics />
         </div>
     );
 }
